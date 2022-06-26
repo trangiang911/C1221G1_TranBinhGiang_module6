@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+    
+    <fieldset class="border p-2">
+        <legend class="w-auto">Bộ Lọc</legend>
+        <div class="d-flex justify-content-between col-12">
+            <div class="row col-8" style="align-items: center;">
+                <span>Lọc theo</span>
+                <div class="col-4">
+                    <select name="find" class="form-control" id="findCustomer">
+                        <option value="code">Mã khách hàng</option>
+                        <option value="group">Nhóm khách hàng</option>
+                        <option value="name">Tên khách hàng</option>
+                        <option value="address">Địa chỉ</option>
+                        <option value="phone">Điện thoại</option>
+                    </select>
+                </div>
+    
+                <div class="col-3">
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search"
+                                                                     aria-hidden="true"></i> Lọc kết quả
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end col-4" style="align-items: center;">
+                <span>Sắp xếp</span>
+                <div class="col-8">
+                    <select class="form-control" name="sort" id="sortCustomer">
+                        <option value="code">Mã khách hàng</option>
+                        <option value="group">Nhóm khách hàng</option>
+                        <option value="name">Tên khách hàng</option>
+                        <option value="address">Địa chỉ</option>
+                        <option value="phone">Điện thoại</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <br>
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+        <div class="col">
+            <div class="card radius-15">
+                <div class="card-body text-center">
+                    <div class="p-4 border radius-15">
+                        <img
+                                src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                width="110"
+                                height="110"
+                                class="rounded-circle shadow"
+                                alt=""
+                        />
+                        <h5 class="mb-0 mt-5">Trần Bình Giảng</h5>
+                        <p class="mb-3">Master Dev</p>
+                        <div class="list-inline contacts-social mt-3 mb-3">
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-facebook text-white border-0"
+                            ><i class="fa-brands fa-github"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-twitter text-white border-0"
+                            ><i class="fa-brands fa-slack"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-linkedin text-white border-0"
+                            ><i class="fa-brands fa-telegram"></i></i
+                            ></a>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-warning">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Sửa
+                            </button>
+
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                <i class="fa-solid fa-circle-xmark"></i> Xoá
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card radius-15">
+                <div class="card-body text-center">
+                    <div class="p-4 border radius-15">
+                        <img
+                                src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                width="110"
+                                height="110"
+                                class="rounded-circle shadow"
+                                alt=""
+                        />
+                        <h5 class="mb-0 mt-5">Nguyễn Anh Tâm</h5>
+                        <p class="mb-3">UI Developer</p>
+                        <div class="list-inline contacts-social mt-3 mb-3">
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-facebook text-white border-0"
+                            ><i class="fa-brands fa-github"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-twitter text-white border-0"
+                            ><i class="fa-brands fa-slack"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-linkedin text-white border-0"
+                            ><i class="fa-brands fa-telegram"></i></i
+                            ></a>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-warning">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Sửa
+                            </button>
+
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                <i class="fa-solid fa-circle-xmark"></i> Xoá
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card radius-15">
+                <div class="card-body text-center">
+                    <div class="p-4 border radius-15">
+                        <img
+                                src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                width="110"
+                                height="110"
+                                class="rounded-circle shadow"
+                                alt=""
+                        />
+                        <h5 class="mb-0 mt-5">Hoàng Định</h5>
+                        <p class="mb-3">Graphic Designer</p>
+                        <div class="list-inline contacts-social mt-3 mb-3">
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-facebook text-white border-0"
+                            ><i class="fa-brands fa-github"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-twitter text-white border-0"
+                            ><i class="fa-brands fa-slack"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-linkedin text-white border-0"
+                            ><i class="fa-brands fa-telegram"></i></i
+                            ></a>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-warning">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Sửa
+                            </button>
+
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                <i class="fa-solid fa-circle-xmark"></i> Xoá
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card radius-15">
+                <div class="card-body text-center">
+                    <div class="p-4 border radius-15">
+                        <img
+                                src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                width="110"
+                                height="110"
+                                class="rounded-circle shadow"
+                                alt=""
+                        />
+                        <h5 class="mb-0 mt-5">Bùi Quốc Tín</h5>
+                        <p class="mb-3">Android Developer</p>
+                        <div class="list-inline contacts-social mt-3 mb-3">
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-facebook text-white border-0"
+                            ><i class="fa-brands fa-github"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-twitter text-white border-0"
+                            ><i class="fa-brands fa-slack"></i></a>
+                            <a
+                                    href="javascript:;"
+                                    class="list-inline-item bg-linkedin text-white border-0"
+                            ><i class="fa-brands fa-telegram"></i></i
+                            ></a>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-warning">
+                                <i class="fa fa-pencil" aria-hidden="true"></i> Sửa
+                            </button>
+
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">
+                                <i class="fa-solid fa-circle-xmark"></i> Xoá
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagination-control">
+        <div class="row d-flex justify-content-center">
+            <nav aria-label="Page navigation example"
+                 style="width: initial">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="btn btn-secondary">
+                            Previous
+                        </a>
+                    </li>
+                    <li class="page-item btn btn-light">1</li>
+                    <li class="page-item btn btn-light disabled">/</li>
+                    <li class="page-item btn btn-light">3</li>
+                    <span>&nbsp;</span>
+                    <li class="page-item">
+                        <a class="btn btn-secondary">
+                            Next
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between" style="flex-direction: row-reverse;">
+        <div>
+            <button type="button" class="btn btn-success "><i class="fa-solid fa-circle-plus"></i> Thêm</button>
+            <button type="button" class="btn btn-secondary "><i class="fa fa-undo" aria-hidden="true"></i> Trở về</button>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Xác nhận xoá</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Bạn có chắc chắn muốn xoá:
+          <br>
+          <h4>Hành động này không thể hoàn tác</h4>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Xoá</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
