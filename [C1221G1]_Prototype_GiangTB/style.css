@@ -44,3 +44,9 @@ element.style {
 .bg-linkedin {
     background-color: #0976b4!important;
 }
+#navbarSupportedContent {
+    justify-content: space-between;
+}
+span {
+    padding: 0 10px;
+}

@@ -27,41 +27,38 @@
     
     <fieldset class="border p-2">
         <legend class="w-auto">Bộ Lọc</legend>
-        <div class="d-flex justify-content-between col-12">
-            <div class="row col-8" style="align-items: center;">
-                <span>Lọc theo</span>
-                <div class="col-4">
-                    <select name="find" class="form-control" id="findCustomer">
-                        <option value="code">Mã khách hàng</option>
-                        <option value="group">Nhóm khách hàng</option>
-                        <option value="name">Tên khách hàng</option>
-                        <option value="address">Địa chỉ</option>
-                        <option value="phone">Điện thoại</option>
-                    </select>
-                </div>
-    
-                <div class="col-3">
-                    <input class="form-control" type="text">
-                </div>
-                <div class="col-3">
-                    <button class="btn btn-primary" type="button"><i class="fa fa-search"
-                                                                     aria-hidden="true"></i> Lọc kết quả
-                    </button>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="form-inline my-2 my-lg-0">
+            <span>Lọc theo</span>
+                  <select name="find" class="form-control mr-sm-2" id="findCustomer">
+                      <option value="code">Mã khách hàng</option>
+                      <option value="group">Nhóm khách hàng</option>
+                      <option value="name">Tên khách hàng</option>
+                      <option value="address">Địa chỉ</option>
+                      <option value="phone">Điện thoại</option>
+                  </select>
+              
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search"
+                  aria-hidden="true"></i> Lọc kết quả</button>
+              </div>
+              <div class="form-inline my-2 my-lg-0">
+                <span>Sắp xếp theo</span>
+                      <select name="find" class="form-control mr-sm-2" id="findCustomer">
+                          <option value="code">Mã khách hàng</option>
+                          <option value="group">Nhóm khách hàng</option>
+                          <option value="name">Tên khách hàng</option>
+                          <option value="address">Địa chỉ</option>
+                          <option value="phone">Điện thoại</option>
+                      </select>
+                  </div>
             </div>
-            <div class="d-flex justify-content-end col-4" style="align-items: center;">
-                <span>Sắp xếp</span>
-                <div class="col-8">
-                    <select class="form-control" name="sort" id="sortCustomer">
-                        <option value="code">Mã khách hàng</option>
-                        <option value="group">Nhóm khách hàng</option>
-                        <option value="name">Tên khách hàng</option>
-                        <option value="address">Địa chỉ</option>
-                        <option value="phone">Điện thoại</option>
-                    </select>
-                </div>
-            </div>
-        </div>
+          </nav>
     </fieldset>
     <br>
     <div class="d-flex justify-content-between">
